@@ -1,0 +1,27 @@
+mat-card{
+    background:white;
+    padding:0 10px;
+    max-width: 900px;
+    margin-top: 50px;
+    margin:50px auto;
+    border-radius: 30px;
+    .buttonsDiv{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        button{
+            padding:8px 0;
+            font-size:16px;
+        }
+    }
+    .buttons{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            padding:8px 0;
+            font-size:16px;
+        }
+    }
+}
