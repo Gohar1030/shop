@@ -1,0 +1,61 @@
+.main-content{
+    max-width: 900px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    .card{
+        box-shadow: 18px 14px 16px rgba(100,0,0,0.5);
+        width:200px;
+        margin:auto;
+        border:10px;
+        border-radius:20px;
+        background-color:rgba(0,0,0,0.5);
+        position: relative;
+        margin:10px;
+      }
+      .product-title{
+        font-size:30px;
+        font-weight:bold;
+        text-align:center;
+        /*This text shadow format is per as google fonts requirements*/
+        text-shadow:.06em .06em 0 #fff,.08em .08em 0 #aaa;
+        font-family: 'Tangerine', serif;
+      }
+      .product-price{
+       
+       text-align:center;
+        font-weight:bold;
+        border-style:5px solid;
+        font-size:10px;
+        border-radius:10px;
+         /*minimal height for the button*/
+        min-height:50px;
+        position: absolute;
+    right: -10px;
+    top: -10px;
+      }
+      
+      .card-img{
+         /*here the image will take the maximum width of the card*/
+        max-width:350px;
+        width:100%;
+        height:auto;
+        border-radius:2px;
+        
+      }
+      .info{
+         /*the product information section is displayed as a block of words*/
+        display:block;
+        text-align:center;
+        color:white;
+        padding-bottom: 10px;
+      }
+   
+      
+       
+       
+      
+}

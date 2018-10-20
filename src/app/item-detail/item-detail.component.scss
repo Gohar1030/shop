@@ -1,0 +1,20 @@
+.item{
+    max-width: 900px;
+    margin:auto;
+    background:white;
+    padding:20px 0;
+.flex-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    position: relative;
+    .price{
+        position: absolute;
+        right: 10px;
+    }
+   .card-img{
+    width: 300px;
+    margin:20px;
+}
+}
+}
