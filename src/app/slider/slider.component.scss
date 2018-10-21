@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     max-width: 600px;
     margin:50px auto;
+    
     .tags-nav {
         margin:  10px;
     }
@@ -19,6 +20,8 @@
     padding: .35em 1em;
     border-radius: 1em;
     cursor: pointer;
+    background: #dd3a36;
+    color: white;
 }
 
 }

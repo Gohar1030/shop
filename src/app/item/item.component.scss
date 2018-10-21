@@ -1,0 +1,41 @@
+.card{
+    width:200px;
+    margin:auto;
+    border:10px;
+    background-color:white;
+    position: relative;
+    margin:20px;
+  }
+  .product-title{
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    /*This text shadow format is per as google fonts requirements*/
+  }
+  .product-price{
+   
+   text-align:center;
+    font-weight:bold;
+    border-style:5px solid;
+    font-size:10px;
+     /*minimal height for the button*/
+    min-height:50px;
+    position: absolute;
+right: -10px;
+top: -10px;
+  }
+  
+  .card-img{
+     /*here the image will take the maximum width of the card*/
+    max-width:350px;
+    width:100%;
+    height:auto;
+    border-radius:2px;
+    
+  }
+  .info{
+     /*the product information section is displayed as a block of words*/
+    display:block;
+    text-align:center;
+    padding-bottom: 10px;
+  }

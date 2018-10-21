@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import { SliderComponent } from './slider/slider.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { FooterComponent } from './footer/footer.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     MainComponent,
     SliderComponent,
     ItemDetailComponent,
-    FooterComponent
+    FooterComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

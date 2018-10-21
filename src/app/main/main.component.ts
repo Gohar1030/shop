@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  arr =[1,2,3,4,5,6,7,8,9,10]
+  items =[
+    {title:'strawberry cake', description:'This cake will make you happy', price:'20', image:'https://images.pexels.com/photos/48184/bun-sweets-pastries-pastry-shop-48184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
+    {title:'strawberry cake', description:'This cake will make you happy', price:'20', image:'https://images.pexels.com/photos/48184/bun-sweets-pastries-pastry-shop-48184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
+    {title:'strawberry cake', description:'This cake will make you happy', price:'20', image:'https://images.pexels.com/photos/48184/bun-sweets-pastries-pastry-shop-48184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
+    {title:'strawberry cake', description:'This cake will make you happy', price:'20', image:'https://images.pexels.com/photos/48184/bun-sweets-pastries-pastry-shop-48184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'}
+
+
+  ];
   constructor() { }
 
   ngOnInit() {
