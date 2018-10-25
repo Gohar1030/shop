@@ -1,10 +1,19 @@
 .nav-info{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
     justify-content: space-around;
     display: flex;
     align-items: center;    
     background-color:rgba(256,256,256,0.3);
+    transition: 1s;
+    &.nav-info-scrolled{
+        background-color: white!important; 
+    }
     .buttons {
-
+        display: flex;
+        align-items: center;
         button {
             background:transparent;
         }
@@ -18,6 +27,26 @@
         width: 100px;
         outline: none;
 
+    }
+}
+
+.scrolled {
+    transition: 1s;
+    display: none;
+}
+.basket-div{
+    position: relative;
+    p{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background:#dd3a36;
+        border-radius:50%;
+        color: white;
+    font-size: 11px;
+    text-align: center;
+    top: -15px;
+    right: -17px;
     }
 }
 }

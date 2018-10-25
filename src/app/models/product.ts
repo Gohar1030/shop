@@ -3,4 +3,5 @@ export class Product {
     description:string;
     image;
     price:string;
+    id:number;
 }

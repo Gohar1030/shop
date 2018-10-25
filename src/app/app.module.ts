@@ -14,6 +14,10 @@ import { SliderComponent } from './slider/slider.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { FooterComponent } from './footer/footer.component';
 import { ItemComponent } from './item/item.component';
+import {MatIconModule} from '@angular/material/icon';
+import { BasketComponent } from './basket/basket.component';
+import { BasketService } from './services/basket.service';
+import { CategorieComponent } from './categorie/categorie.component';
 
 @NgModule({
   declarations: [
@@ -24,22 +28,26 @@ import { ItemComponent } from './item/item.component';
     SliderComponent,
     ItemDetailComponent,
     FooterComponent,
-    ItemComponent
+    ItemComponent,
+    BasketComponent,
+    CategorieComponent
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     MatButtonModule,
-
+    MatIconModule,
     RouterModule.forRoot(
       [
         {path: '', pathMatch:'full', redirectTo:'home'},
         {path:'home', component:MainComponent},
-        {path:'item/:id', component:ItemDetailComponent}
+        {path:'item/:id', component:ItemDetailComponent},
+        {path:'basket', component:BasketComponent}
+
       ]
     ),
   ],
-  providers: [],
+  providers: [BasketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
