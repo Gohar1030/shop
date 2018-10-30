@@ -1,20 +1,15 @@
 <div class="nav-info" [ngClass]="{'nav-info-scrolled':scrolled}">
-  <div class="buttons">
-      <button mat-button routerLink="/"> Home</button>
-      <button mat-button> About us</button>
-      <button mat-button>Contact</button>
-  </div>
 <div class="logo-div">
   <img src="../../assets/images/logo.png" alt="" routerLink="/">
 </div>
-<div class="info" [ngClass]="{'scrolled':scrolled}">
-  <p>Phone: +3733333333</p>
-  <p>Address: Abovyan 20/23</p>
-  <p>Viber: +3333333333</p>
-</div>
-<div class="basket-div">
-  <mat-icon style="font-size:40px;outline: none;cursor: pointer;" routerLink="/basket">shopping_basket</mat-icon>
-<p>{{count}}</p>
+<div class="buttons">
+  <button mat-button routerLink="/"> Home</button>
+  <button mat-button> About us</button>
+  <button mat-button>Contact</button>
+  <div class="basket-div">
+    <mat-icon style="font-size:40px;outline: none;cursor: pointer;" routerLink="/basket">shopping_basket</mat-icon>
+  <p>{{count}}</p>
+  </div>
 </div>
 
 </div>

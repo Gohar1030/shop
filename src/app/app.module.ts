@@ -17,7 +17,13 @@ import { ItemComponent } from './item/item.component';
 import {MatIconModule} from '@angular/material/icon';
 import { BasketComponent } from './basket/basket.component';
 import { BasketService } from './services/basket.service';
+import { ItemService } from './services/item.service';
+
 import { CategorieComponent } from './categorie/categorie.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -30,24 +36,31 @@ import { CategorieComponent } from './categorie/categorie.component';
     FooterComponent,
     ItemComponent,
     BasketComponent,
-    CategorieComponent
+    CategorieComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       [
         {path: '', pathMatch:'full', redirectTo:'home'},
         {path:'home', component:MainComponent},
         {path:'item/:id', component:ItemDetailComponent},
-        {path:'basket', component:BasketComponent}
+        {path:'basket', component:BasketComponent},
+        {path:'categorie/:name', component:CategorieComponent},
+
 
       ]
     ),
   ],
-  providers: [BasketService],
+  providers: [BasketService, ItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

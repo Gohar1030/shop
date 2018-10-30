@@ -1,11 +1,11 @@
  
     <div class="content">
         <div class="trans">
-            <h1>
-                {{contentCategorie? contentCategorie : ''}}
+            <h1 *ngIf="contentCategorie">
+                {{contentCategorie}}
             </h1>
-            <p>
-                    {{contentHomepage? contentHomepage : ''}}
+            <p *ngIf="contentHomepage">
+                    {{contentHomepage}}
 
             </p>
         </div>

@@ -1,3 +1,10 @@
-<p>
-  categorie works!
-</p>
+
+<app-header [contentCategorie]="'Juice'">
+
+</app-header>
+
+<div class="main-content">
+  
+  <!--The card begins here-->
+  <app-item *ngFor="let item of items" [item]="item" ></app-item>
+</div>

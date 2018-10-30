@@ -10,6 +10,7 @@
     transition: 1s;
     &.nav-info-scrolled{
         background-color: white!important; 
+        height:60px;
     }
     .buttons {
         display: flex;
@@ -28,11 +29,6 @@
         outline: none;
 
     }
-}
-
-.scrolled {
-    transition: 1s;
-    display: none;
 }
 .basket-div{
     position: relative;

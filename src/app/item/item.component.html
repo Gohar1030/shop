@@ -1,15 +1,13 @@
 
 <div class="card">
-  <img src="{{item?.image}}" alt="Yummix cup cake" alt="" class="card-img">
+  <img src="{{item?.image}}" alt="Yummix cup cake" routerLink="/item/5" alt="" class="card-img">
 <!--product and button are begins here-->
-<div class="product-title"  routerLink="/item/5"> {{ item?.title}} <br> <!-- used the <br> tag so that the product title and product line are in the same container with little white space-->
-<button class="product-price">{{ item?.price}}$</button>
+<div class="product-title"  routerLink="/item/5"> {{ item?.title}} 
+<span class="product-price">{{ item?.price}}$</span>
 </div>
 <!--product annd button are ends here--->
 <!--information section begins here-->
 <article class="info">
-<p>{{item?.description}}  
-</p>
 <button class="add" (click)="add(item?.id)">Add</button>
 </article>
 </div>

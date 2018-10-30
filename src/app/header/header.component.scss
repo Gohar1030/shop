@@ -12,22 +12,27 @@
         width: 100%;
         height: 100%;
         background: rgba(221,58,54,0.8);
+        overflow:hidden;
         h1{
             color:white;
             font-size: 56px;
-            transform: translate(-50%,-50%);
-            position: absolute;
-            top: 45%;
-            left: 50%;
+            text-align: center;
+            margin-top: 50px;
+            // transform: translate(-50%,-50%);
+            // position: absolute;
+            // top: 45%;
+            // left: 50%;
         
         };
         p{
             color:white;
             font-size: 20px;
-            transform: translate(-50%,-50%);
-            position: absolute;
-            top: 45%;
-            left: 50%;
+            padding: 10px;
+            text-align: center;
+            // transform: translate(-50%,-50%);
+            // position: absolute;
+            // top: 45%;
+            // left: 50%;
         }
     }
 }

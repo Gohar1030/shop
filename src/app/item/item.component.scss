@@ -7,7 +7,8 @@
     margin:20px;
   }
   .product-title{
-    font-size:30px;
+    font-size:22px;
+    padding: 10px;
     font-weight:bold;
     text-align:center;
     cursor: pointer;
@@ -21,12 +22,16 @@
    text-align:center;
     font-weight:bold;
     border-style:5px solid;
-    font-size:10px;
+    font-size:20px;
      /*minimal height for the button*/
     min-height:50px;
     position: absolute;
-right: -10px;
-top: -10px;
+    right: -10px;
+    top: -10px;
+    background-color: #dd3a36;
+    border-radius: 50%;
+    color:white;
+    padding: 8px;
   }
   
   .card-img{
@@ -35,7 +40,7 @@ top: -10px;
     width:100%;
     height:auto;
     border-radius:2px;
-    
+    cursor: pointer;
   }
   .info{
      /*the product information section is displayed as a block of words*/
